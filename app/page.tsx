@@ -27,16 +27,16 @@ export default function Home() {
   ];
   return (
     <div>
-      <div >
+      <div>
       <h1 className="mx-10 text-4xl font-bold text-center text-zinc-500 gap-4 py-6 bg-slate-200">Assignment 10</h1>
       </div>
       <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-full place-items-center">
         {cardData.map((item, index) => (
           <div
             key={index}
-            className="bg-zinc-200 shadow-md rounded-lg overflow-hidden w-[300px] sm:w-[200px] md:w-[300px] lg:w-[400px] my-6 mx-6"
+            className="bg-zinc-200 shadow-md rounded-lg overflow-hidden w-[300px] sm:w-[170px] md:w-[250px] lg:w-[300px] my-6 mx-6"
           >
-            <Image alt={item.title} src={item.img} height={200} width={420} className="" />
+            <Image alt={item.title} src={item.img} height={200} width={400} className="" />
             <div className="p-4">
               <h3 className="text-lg font-semibold">{item.title}</h3>
               <p className="text-gray-600 mt-2">{item.desc}</p>
